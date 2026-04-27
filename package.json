@@ -2,8 +2,10 @@
   "name": "revoirt-backend",
   "version": "1.0.0",
   "description": "The backend of Revoirt is a scalable Node.js system built for real-time collaboration, handling authentication, workspace management, and low-latency communication via WebSockets. It uses a modular, service-oriented architecture with REST APIs and efficient data persistence, ensuring high concurrency, synchronization, and seamless scalability.",
-  "main": "index.js",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +22,10 @@
   },
   "homepage": "https://github.com/bye-shuvo/Revoirt-backend#readme",
   "dependencies": {
-    "express": "^5.2.1"
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14",
+    "pnpm": "^10.33.2",
+    "ws": "^8.20.0"
   }
 }
