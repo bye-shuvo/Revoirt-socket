@@ -1,6 +1,5 @@
 import express from "express";
 import { WebSocketServer } from "ws";
-import { createRequire } from "module";
 import { setupWSConnection } from "y-websocket/bin/utils";
 import { configDotenv } from "dotenv";
 
