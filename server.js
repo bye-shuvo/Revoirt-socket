@@ -1,9 +1,12 @@
 import express from 'express';
 import { WebSocketServer } from 'ws';
-import { setupWSConnection } from "y-websocket" ; // module issue
+import {createRequire} from "module" ;
 import { configDotenv } from 'dotenv';
 
 configDotenv();
+
+const require = createRequire(import.meta.url); //used to force y-websocket to return utils
+const { setupWSConnection } = require('y-websocket/bin/utils');
 
 const app = express();
 const PORT = Number(process.env.PORT) || 1234 ;
