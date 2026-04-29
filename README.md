@@ -1,33 +1,27 @@
 # 🚀 Revoirt Backend
 
-A scalable, real-time backend system built with **Node.js** to power
+A scalable, real-time websocket server built with **Node.js** to power
 **Revoirt**, a collaborative code editor for developers worldwide.
 
 ## 🧠 Overview
 
 The backend is designed as an event-driven system supporting real-time
-collaboration, secure authentication, and efficient data handling.
+collaboration, session management and efficient data handling.
 
 ## ⚙️ Core Features
 
--   JWT-based Authentication & Authorization\
--   WebSocket real-time collaboration (CRDT/OT)\
+-   WebSocket real-time collaboration (CRDT)
 -   Workspace & session management\
--   REST API layer\
--   PostgreSQL/MongoDB + Redis
 
 ## 🏗️ Architecture
 
-Client → Node.js Backend → Services → Database → Redis
+Client → Node.js Backend → Websocket Services
 
 ## 🧩 Tech Stack
 
 -   Node.js\
--   Express.js / Fastify\
--   WebSocket / Socket.IO\
--   PostgreSQL / MongoDB\
--   Redis\
--   Docker
+-   Express.js \
+-   WebSocket / WS\
 
 ## 📈 Summary
 
